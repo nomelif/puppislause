@@ -1,0 +1,10 @@
+[package]
+name = "puppislause"
+version = "0.1.0"
+authors = ["theofriberg <theo.friberg@gmail.com>"]
+
+[dependencies]
+sha1 = "0.6.0"
+rand = "0.6.1"
+rand_chacha = "0.1.0"
+rust-crypto = "^0.2"
