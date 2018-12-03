@@ -32,7 +32,7 @@ for word in parsed.find_all('s'): # The s-tag in Kaino denotes a word
     continue
   analysis = analysis_[0]
 
-  if v.analyze(s)[0]['CLASS'] == sys.argv[2]:
+  if analysis['CLASS'] == sys.argv[2] and len(analysis['BASEFORM']) < 10:
     words = words | set([analysis['BASEFORM'].lower()])
 
 # Sort the output for predictability's sake
